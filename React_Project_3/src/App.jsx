@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from "styled-components"
 import Start from './Component/Start';
+import GamePlay from './Component/GamePlay';
 const Button=styled.button`
   background-color:black;
   color:white;
@@ -13,7 +14,7 @@ export default function App() {
   }
   return (
     <>
-    isGameStarted?<Start/>:<Gamepad/>
+    {isGameStarted ? <GamePlay /> : <Start toggle={toggleGamePlay} />}
     </>
   )
 }
