@@ -13,7 +13,7 @@ export default function App() {
   }
   return (
     <>
-    <Start/>
+    isGameStarted?<Start/>:<Gamepad/>
     </>
   )
 }
